@@ -6,21 +6,40 @@ using System.Threading.Tasks;
 
 namespace Section02
 {
-    internal class Program
+   
+    public class Program
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i<11; i++)
+            if (args.Length >= 1 && args[0] == "-tom")
             {
-                double meter = FeetToMeter(i);
-                Console.WriteLine($"{i} ft = {meter:F4}");
+                PrintFeetTometerList(1, 10);
             }
+            else
+            {
+                PrintMeterToFeetrList(1, 10);
+            }
+
+
             Console.ReadLine();
         }
 
-        static double FeetToMeter( int feet)
+        static void PrintFeetTometerList(int start, int stop)
         {
-            return feet * 0.3048;
+            for (int i = start; i <= stop; i++)
+            {
+                double meter = FeetConverter.FeetToMeter(i);
+                Console.WriteLine($"{i} ft = {meter:F4}");
+            }
+        }
+
+        static void PrintMeterToFeetrList(int start, int stop)
+        {
+            for (int i = start; i <= stop; i++)
+            {
+                double meter = FeetConverter.MeterToFeet(i);
+                Console.WriteLine($"{i} Meter = {meter:F4}");
+            }
         }
     }
 }
