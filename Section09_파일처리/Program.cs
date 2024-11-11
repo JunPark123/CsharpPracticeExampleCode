@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Section09_파일처리
 {
@@ -23,20 +24,20 @@ namespace Section09_파일처리
             //기본생성자 : 파일이 존재하지 않으면 새로 생성 존재하면 덮어쓰기
             //append true : 끝 행에 추가 , false : 덮어쓰기
             using (var writer = new StreamWriter(filePath, append: true))
-            {
+                {
                 writer.WriteLine("안녕하세요");
                 writer.WriteLine("저는 비빔인간입니다");
                 writer.WriteLine("저의 이름은 이균입니다");
             }
         
-        }
+                }
 
         static bool IsUserAdministrator()
         {
             WindowsIdentity identity = WindowsIdentity.GetCurrent();
             WindowsPrincipal principal = new WindowsPrincipal(identity);
             return principal.IsInRole(WindowsBuiltInRole.Administrator);
-        }
+            }
 
 
         static void Main(string[] args)
@@ -64,6 +65,7 @@ namespace Section09_파일처리
 
             WriteText();
             Console.ReadLine();
+
         }
     }
 }
