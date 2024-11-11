@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section04_4-1", "Section04_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section05_문자열", "ConsoleApp1\Section05_문자열.csproj", "{F46EBA8C-902C-4839-9386-137446C7A024}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section09_파일처리", "Section09_파일처리\Section09_파일처리.csproj", "{7EA3DF72-F071-4907-B1CB-59DE50D009C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F46EBA8C-902C-4839-9386-137446C7A024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F46EBA8C-902C-4839-9386-137446C7A024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F46EBA8C-902C-4839-9386-137446C7A024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EA3DF72-F071-4907-B1CB-59DE50D009C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EA3DF72-F071-4907-B1CB-59DE50D009C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EA3DF72-F071-4907-B1CB-59DE50D009C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EA3DF72-F071-4907-B1CB-59DE50D009C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

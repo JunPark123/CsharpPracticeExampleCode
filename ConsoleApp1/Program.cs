@@ -150,12 +150,11 @@ namespace ConsoleApp1
                 names = new string(clone);
             }
 
-            string[] abcde;
             foreach(var x in str.Split(new[] { ';' }, StringSplitOptions.RemoveEmptyEntries))
             {
                 var array = x.Split('=');
                 Console.WriteLine($"{forstring(array[0])}{array[1]}");
-
+               
             }
 
             Console.ReadLine();
